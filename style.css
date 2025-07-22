@@ -234,8 +234,9 @@ body {
 }
 
 .about-image img {
-  max-width: 280px;
-  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .about-text {
@@ -252,11 +253,6 @@ body {
 
 .about-text h3 span {
   color: orange;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 .about-text p {
