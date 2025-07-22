@@ -201,97 +201,78 @@ body {
 
 
 /* About Section */
-.about-section {
-  background: #fff;
-  padding: 80px 20px;
+/* Overall About Section Container */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+}
+
+/* Image Container */
+.about-image {
+  flex: 1 1 350px;
   text-align: center;
 }
 
-.section-title h2 {
-  font-size: 36px;
-  font-weight: bold;
-  color: #111;
-}
-
-.section-title span {
-  display: block;
-  font-size: 16px;
-  color: orange;
-  margin-top: 6px;
-  border-top: 2px solid #111;
-  width: 100px;
-  margin: 10px auto;
-  padding-top: 6px;
-}
-
-.about-content {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
-img {
+.about-image img {
   max-width: 100%;
   height: auto;
-  display: block;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Text Container */
 .about-text {
-  max-width: 600px;
-  text-align: left;
+  flex: 1 1 500px;
 }
 
 .about-text h3 {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  color: #111;
-}
-
-.about-text h3 span {
-  color: orange;
+  font-size: 24px;
+  margin-bottom: 15px;
 }
 
 .about-text p {
-  font-size: 15px;
-  line-height: 1.8;
-  color: #222;
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: justify;
 }
 
 .cv-btn {
   display: inline-block;
   margin-top: 20px;
-  padding: 12px 25px;
-  background: orange;
+  padding: 10px 20px;
+  background-color: #28a745;
   color: white;
-  font-weight: bold;
+  border-radius: 6px;
   text-decoration: none;
-  border-radius: 5px;
-  transition: 0.3s;
+  transition: background 0.3s ease;
 }
 
 .cv-btn:hover {
-  background: white;
-  color: orange;
-  border: 1px solid orange;
+  background-color: #218838;
 }
 
-/* Responsive */
+/* 🔁 Responsive for Mobile Screens */
 @media (max-width: 768px) {
   .about-content {
     flex-direction: column;
-    align-items: center;
-  }
-
-  .about-text {
     text-align: center;
+    padding: 20px;
   }
 
   .about-text p {
-    text-align: justify;
+    text-align: center;
+  }
+
+  .about-text h3 {
+    font-size: 20px;
+  }
+
+  .about-image img {
+    width: 80%;
   }
 }
 
