@@ -254,6 +254,11 @@ body {
   color: orange;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .about-text p {
   font-size: 15px;
   line-height: 1.8;
